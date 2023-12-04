@@ -92,7 +92,7 @@ variable "operator_email" {
 
 # auto scaling group variables
 variable "launch_template_name" {
-    default     = "kelly-launch-template"  # get from management console 
+    default     = "kelly-launch-template"  
     description = "name of the launch template"
     type        = string
 }
@@ -115,3 +115,15 @@ variable "ec2_key_pair_name" {
     type        = string
 }
 
+#route 53 variable
+variable "domain_name" {
+    default     = "webbxpro.com"  # get from management console 
+    description = "domain name"
+    type        = string
+}
+
+variable "record_name" {
+    default     = "www"  
+    description = "sub domain name"
+    type        = string
+}
