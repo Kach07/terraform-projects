@@ -82,3 +82,28 @@ variable "ssl_certificate_arn" {
     description = "ssl certificate arn"
     type        = string
 }
+
+# auto scaling group variables
+variable "launch_template_name" {
+    default     = "kelly-launch-template"  # get from management console 
+    description = "name of the launch template"
+    type        = string
+}
+
+variable "ec2_image_id" {
+    default     = "ami-0289c1788ced721ef"  # get from management console 
+    description = "id of the ami"
+    type        = string
+}
+
+variable "ec2_instance_type" {
+    default     = "t2.micro"  # get from management console 
+    description = "ec2 instance type"
+    type        = string
+}
+
+variable "ec2_key_pair_name" {
+    default     = "Dummy_Keypair"  # get from management console 
+    description = "name of ec2 keypair"
+    type        = string
+}
