@@ -83,6 +83,13 @@ variable "ssl_certificate_arn" {
     type        = string
 }
 
+#
+variable "operator_email" {
+    default     = "dirkaka@yahoo.com"  
+    description = "a valid email address"
+    type        = string
+}
+
 # auto scaling group variables
 variable "launch_template_name" {
     default     = "kelly-launch-template"  # get from management console 
@@ -107,3 +114,4 @@ variable "ec2_key_pair_name" {
     description = "name of ec2 keypair"
     type        = string
 }
+
